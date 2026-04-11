@@ -1,10 +1,29 @@
 package com.example.jetpack_modifiers
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.size
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
-@Preview
+@Preview(showBackground = true)
 @Composable
- fun Modi () {
+fun Task1() {
+    Box(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(color = Color.Green)
+            .size(150.dp),
+        contentAlignment = Alignment.Center
 
+        ) {
+        Text(text = "Hello", fontSize = 40.sp, color = Color.White)
+    }
 }

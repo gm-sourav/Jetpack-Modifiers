@@ -18,7 +18,6 @@ import androidx.compose.ui.unit.sp
 fun Task1() {
     Box(
         modifier = Modifier
-            .fillMaxWidth()
             .background(color = Color.Green)
             .size(150.dp),
         contentAlignment = Alignment.Center
